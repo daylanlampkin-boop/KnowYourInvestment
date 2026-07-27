@@ -1,0 +1,14 @@
+# Knowing Your Investment
+# This program calculates the value of a $1,000 investment
+# with a 7% annual return over 30 years.
+
+# Original amount invested
+principal = 1000
+
+# Annual rate of return
+rate = 0.07
+
+# Calculate and display the investment value for years 1 through 30
+for year in range(1, 31):
+    amount = principal * (1 + rate) ** year
+    print(f"Year {year}: ${amount:,.2f}")
